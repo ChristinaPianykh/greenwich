@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Greenwich</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="example.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="0"> 
+
+    <!--Header-->
+    <div id="header"></div>
+
+    <!--First section - green-->
+    <div id="header-image" class="container-fluid text-center">
+        <h1 class="white-text big-header" id="first-line-after-header">GREENWICH</h1>
+        <h3 class="white-text">greenery planting all around the world</h3>
+        <h3 class="white-text" id="thin-text-under-header">populo invenire voluptaria at mei cotidieque definitionem</h3>
+        <span id ="button-test1" class="open-overlay">
+            <a id ="white-button" class="btn btn-lg orange">sign up to order</a>
+        </span>
+    </div>
+
+   <section id ="section-test1" class="overlay" aria-hidden="true">
+     <div class="overlay-content">
+         <h2 style="text-align:center">Sign Up</h2><br>
+         <form role="form" name="myForm" onsubmit="return Registration()">
+             <div class="form-group sign-up-form first-last-name">
+                 <label class="sr-only" for="email">First name:</label> <!--sr-only - for screen readers-->
+                 <input name="fname" type="text" class="form-control" id="first-name" placeholder="First Name*" required>
+             </div>
+             <div class="form-group sign-up-form first-last-name" id="last-name">
+                 <label class="sr-only" for="email">Last name:</label>
+                 <input type="text" class="form-control" id="last-name" placeholder="Last Name*" required>
+             </div>
+             <div class="form-group sign-up-form">
+                 <label class="sr-only" for="email">Email address:</label>
+                 <input type="email" class="form-control" id="email" placeholder="Email Address*" required>
+             </div>
+             <div class="form-group sign-up-form">
+                 <label class="sr-only" for="email">Password:</label>
+                 <input type="password" class="form-control" id="pwd" placeholder="Set A Password*" required>
+             </div>
+             <button type="submit" id="sign-up-submit-btn" class="btn btn-default">Submit</button><br /><br />
+         </form>
+            <span id="btn-close-section-test1" class="close-overlay">
+                <a class="closebtn">×</a>
+            </span>
+        </div>
+    </section>
+
+
+    <section id="section-test3" class="overlay" aria-hidden="true">
+        <div class="overlay-content">
+            <h2 style="text-align:center">Sign in</h2><br>
+            <!--<form role="form" name="myForm" action="form.asp" onsubmit="return validateForm()" method="post">-->
+            <form role="form" name="myForm">
+                <div class="form-group sign-up-form">
+                    <label class="sr-only" for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email Address*" required>
+                </div>
+                <div class="form-group sign-up-form">
+                    <label class="sr-only" for="email">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Set A Password*" required>
+                </div>
+                <button type="submit" id="sign-in-submit-btn" class="btn btn-default">Submit</button><br /><br />
+            </form>
+            <span id="btn-close-section-test3" class="close-overlay">
+                <a class="closebtn">×</a>
+            </span>
+        </div>
+    </section>
+    
+
+
+    <!--About-->
+    <div id="about" class="container-fluid bg-1 text-center background-content">
+        <h1>About us</h1>
+        <h4>what we are doing</h4>
+        <p>
+            Eos abhorreant cotidieque definitionem ad, mel vitae senserit electram in.<br>
+            Elitr recusabo intellegebat no vis, populo invenire voluptaria at mei,<br>
+            vix et electram dignissim. Pro vide oporteat quaestio eu.
+        </p>        
+        <a class="btn btn-lg orange" onclick="buttonWindow()">Read more</a>  
+    </div>
+
+    <div id="buttonModal" class="modal">
+        <span class="glyphicon glyphicon-remove close"></span>
+        <img id="img02" class="img-responsive center-image modal-content" src="Images/aboutus.jpg" style="max-width:700px" />
+        <div class="caption">
+            <br>Putent dolorum contentiones at sit, ne mei quaestio scripserit interesset, ei sea ipsum torquatos.
+            Eam aliquip postulant expetendis ne. Noluisse delicata dissentias te eum, eos ut labore inimicus. Vis ut vide brute laoreet.
+            Sea facilis molestiae ad, pro dolorum instructior at. Usu vidit ferri mucius id.
+            <br><br>
+            Autem eruditi veritus quo eu, has ea omnesque sensibus facilisis. Elit sanctus est et.
+            Te eum facilisi consectetuer, in eum mollis omittam abhorreant. Et usu indoctum laboramus.
+            <br><br>
+            Sea altera quidam suscipit cu, reque inani atomorum vel ne. Mel nisl eius alterum ut, ad ius
+            maluisset sententiae, ei cetero ceteros pri. Wisi fabellas comprehensam no vel. Vis accusata liberavisse no.
+            Liber principes vituperatoribus et mel, zril graeco nostrum has ei. Sed malis constituam in.
+        </div>
+    </div>
+  
+    <!--Why us-->
+    <div class="white-text text-center bg-6">
+        <section class="row title-row">
+            <div class="fill-screen"
+                 style="background-image: url(../../Images/africa.jpg); background-position: 50% 75px"
+                 data-stellar-background-ratio="0.2"
+                 alt="Sunset">
+                <h1 class="h1-sunset">Why us?</h1>
+                <h3>Elitr recusabo intellegebat no vis</h3>
+                <p class="h1-sunset">
+                    Ius ridens deleniti at, qui consul laboramus persequeris et.<br>
+                    Ut vim prima labitur gloriatur, qui ei populo sanctus delectus.<br>
+                    Cu mea idque aeque debitis, ut eum vidit graecis appellantur, sint periculis consectetuer ea vis.
+                </p>
+            </div>
+        </section>
+    </div>
+
+
+    <!--Services-->
+    <div id="services" class="container-fluid bg-2 text-center">
+        <h1>Our Services</h1><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="Images/idea.png" class="img-responsive margin slideanim" alt="Idea">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a onclick="buttonWindow2()" class="btn btn-lg black">See more</a>
+            </div>
+            <div class="col-sm-4">
+                <img src="Images/plane.png" class="img-responsive margin slideanim" alt="Plane">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a onclick="buttonWindow3()" class="btn btn-lg black">See more</a>
+            </div>
+            <div class="col-sm-4">
+                <img src="Images/notes.png" class="img-responsive margin slideanim" alt="Notes">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a onclick="buttonWindow4()" class="btn btn-lg black">See more</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="buttonModal2" class="modal">
+        <span class="glyphicon glyphicon-remove close"></span>   
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img class="img-responsive img-rounded center-block modal-content" src="Images/idea.jpg" alt="Idea" style="max-width:80%;max-height:80%" />                    
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <p class="caption" style="color:white">
+                        Vix sint aliquid ei, vis no diceret definiebas.
+                        Viris aliquid omnesque ei sed. Ut nec vide solum hendrerit, his et dolore tamquam theophrastus.
+                        Per id utroque epicuri dissentiunt, sed assum torquatos id. Dicant audire vix ex,
+                        no nostrud praesent pro. No homero dolorum ius.
+                        <br /><br />
+                        Aliquam oportere forensibus et vix. Eu aliquam alienum euripidis eum, eu eum minimum accusam.
+                        Aliquam suscipit dissentiunt te pri, cum paulo placerat in. Sed impetus periculis ne, duo ceteros probatus ad.
+                        Laboramus disputando adversarium id mea, id eam zril veritus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="buttonModal3" class="modal">
+        <span class="glyphicon glyphicon-remove close"></span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img class="img-responsive img-rounded center-block modal-content" src="Images/flight.jpeg" alt="Smooth Flight" style="max-width:100%;" />
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <p class="caption" style="color:white">
+                        Vix sint aliquid ei, vis no diceret definiebas.
+                        Viris aliquid omnesque ei sed. Ut nec vide solum hendrerit, his et dolore tamquam theophrastus.
+                        Per id utroque epicuri dissentiunt, sed assum torquatos id. Dicant audire vix ex,
+                        no nostrud praesent pro. No homero dolorum ius.
+                        <br /><br />
+                        Aliquam oportere forensibus et vix. Eu aliquam alienum euripidis eum, eu eum minimum accusam.
+                        Aliquam suscipit dissentiunt te pri, cum paulo placerat in. Sed impetus periculis ne, duo ceteros probatus ad.
+                        Laboramus disputando adversarium id mea, id eam zril veritus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="buttonModal4" class="modal">
+        <span class="glyphicon glyphicon-remove close"></span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <img class="img-responsive img-rounded center-block modal-content" src="Images/notes.jpg" alt="Notes" style="max-width:80%;max-height:80%" />
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <p class="caption" style="color:white">
+                        Vix sint aliquid ei, vis no diceret definiebas.
+                        Viris aliquid omnesque ei sed. Ut nec vide solum hendrerit, his et dolore tamquam theophrastus.
+                        Per id utroque epicuri dissentiunt, sed assum torquatos id. Dicant audire vix ex,
+                        no nostrud praesent pro. No homero dolorum ius.
+                        <br /><br />
+                        Aliquam oportere forensibus et vix. Eu aliquam alienum euripidis eum, eu eum minimum accusam.
+                        Aliquam suscipit dissentiunt te pri, cum paulo placerat in. Sed impetus periculis ne, duo ceteros probatus ad.
+                        Laboramus disputando adversarium id mea, id eam zril veritus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Some work-->
+    <div id="works" class="container-fluid text-center bg-3" >
+        <h1 style="margin-bottom:0;padding:0">Some of our work</h1><br />
+        <h4 style="margin:0;padding-bottom:30px" class="slideanim">Aliquid nominati aliquando</h4>
+        <div class="row text-center column">
+            <div class="col-lg-3 col-sm-6 grow">
+                <figure><img  class="works-image" src="Images/tea1.jpg" style="width:100%" height="300" alt="Green Leaves"></figure>
+                <div class="center">voluptaria rationibus</div>
+            </div>
+            <div class="col-lg-3 col-sm-6 grow">
+                <figure><img class="works-image" src="Images/tea2.jpg" style="width:100%" height="300" alt="Green Leaves"></figure>
+                <div class="center">voluptaria rationibus</div>
+            </div>
+            <div class="col-lg-3 col-sm-6 grow">
+                <figure><img class="works-image" src="Images/tea3.jpg" style="width:100%" height="300" alt="Green Leaves"></figure>
+                <div class="center">voluptaria rationibus</div>
+            </div>
+            <div class="col-lg-3 col-sm-6 grow img">
+                <figure><img class="works-image" src="Images/tea2.jpg" style="width:100%" height="300" alt="Green Leaves"></figure>
+                <div class="center">voluptaria rationibus</div>
+            </div>
+
+            <div class="col-lg-4 col-sm-4 grow">
+                <figure><img class="works-image" src="Images/tea4.jpg" style="width:100%;height:100%" alt="Green Leaves"></figure>
+                <div class="center">voluptaria rationibus</div>
+            </div>
+            <div class="col-lg-4 col-sm-4 grow">
+                <figure><img class="works-image" src="Images/tea5.jpg" style="width:100%;height:100%" alt="Green Leaves"></figure>
+                <div class="center">voluptaria rationibus</div>
+            </div>
+            <div class="col-lg-4 col-sm-4 grow">
+                <figure><img class="works-image" src="Images/tea6.jpg" style="width:100%;height:100%" alt="Green Leaves"></figure>
+                <div class="center">voluptaria rationibus</div>
+            </div>
+        </div>        
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="glyphicon glyphicon-remove close"></span>
+        <img class="modal-content" id="img01">
+        <div class="caption" style="text-align:center">voluptaria rationibus</div>
+    </div>  
+
+    
+
+    <!--Feedbacks-->
+    <div class="container-fluid text-center bg-4">
+        <h1 style="text-align:center;margin-bottom:0">What our customers say</h1>
+        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <h4>"Cu consul nominati mei. Sea ex senserit conceptam"<br><span style="font-style:normal;">Felix Roe, Vice President</span></h4>
+                </div>
+                <div class="item">
+                    <h4>"Laboramus persequeris et!!"<br><span style="font-style:normal;">John Dohrt, Salesman, Riga Inc</span></h4>
+                </div>
+                <div class="item">
+                    <h4>"Eos ex nostro consequat, evertitur comprehensam te nec"<br><span style="font-style:normal;">Chandler Bring, Actor, FineArt</span></h4>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div id="contact" class="container-fluid bg-grey bg-5">
+        <h2>Contact</h2>
+        <div class="row">
+            <div class="col-sm-5 slideanim">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Krakow, PL</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +00 555333555</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> mail@mail.com</p>
+            </div>
+            <div class="col-sm-7" id="contact-bs-override">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <lable id="nameLable" for="nameField" class="sr-only">Name:</lable>
+                        <input class="form-control" id="nameField" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <lable id="emailLable" for="emailField" class="sr-only">Email:</lable>
+                        <input id="emailField" class="form-control" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                    <div>
+                        <lable id="commentLable" for="commentField" class="sr-only">Comment:</lable>                        
+                        <textarea id ="commentField" class="form-control" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                    </div>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button id="subButton" class="btn orange btn-default pull-right" type="button">Send</button>
+                    </div>
+                    <div>
+                        <p id='result' class="pull-right" style="color:#E85A29"></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Google Map-->
+    <div id="googleMap" style="height:450px;width:100%"></div>    
+
+    <!--Footer-->
+        <footer>
+            <div id="footer" class="container-fluid footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Lorem Ipsum </h3>
+                            <ul>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Lorem Ipsum </h3>
+                            <ul>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Lorem Ipsum </h3>
+                            <ul>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Lorem Ipsum </h3>
+                            <ul>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                            <h3>Subscribe</h3>
+                            <ul>
+                                <li>
+                                    <div class="input-append newsletter-box text-center">
+                                        <form onsubmit="return Subscribe()">
+                                            <label class="sr-only" for="email">Email:</label>
+                                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                                            <button id="subscribe-btn" class="btn orange" type="submit"><i class="glyphicon glyphicon-ok"></i> Subscribe</button>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="social">
+                                <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </div>
+            <!--/.footer-->
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="pull-left"> Copyright © Lorem Ipsum 2016. All right reserved. </p>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="example.js"></script>
+        <script type="text/javascript" src="cbpAnimatedHeader.js"></script>
+        <script type="text/javascript" src="classie.js"></script>
+        <script type="text/javascript" src="jquery.stellar.js"></script>     
+        <script type="text/javascript" src="overlayer.js"></script>   
+
+</body>
+</html>
